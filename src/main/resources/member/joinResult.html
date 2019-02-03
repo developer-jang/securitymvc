@@ -1,0 +1,21 @@
+<html
+        xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>JOIN</title>
+    <meta charset="UTF-8" content="text/html" http-equiv="Content-Type"/>
+</head>
+<body>
+<p>
+    <label>UID</label>
+    <input name="urid" readonly th:value="${member.urid}" type="text"/>
+</p>
+<p>
+    <label>UPW</label>
+    <input name="password" readonly th:value="${member.password}" type="text"/>
+</p>
+<p>
+    <label>UNAME</label>
+    <input name="username" readonly th:value="${member.username}" type="text"/>
+</p>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<html xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <title>ADMIN</title>
+    <meta charset="UTF-8" content="text/html" http-equiv="Content-Type"/>
+</head>
+<body>
+<!--<h1>ADMIN Page for Every One!!</h1>-->
+<h1>/admin for admin</h1>
+<hr/>
+<h3 sec:authentication="name">Spring Security username</h3>
+<h3>[[${#authentication.name}]]</h3>
+<hr/>
+</body>
+</html>

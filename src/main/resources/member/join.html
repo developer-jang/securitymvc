@@ -1,0 +1,30 @@
+<html
+        xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>JOIN</title>
+    <meta charset="UTF-8" content="text/html" http-equiv="Content-Type"/>
+</head>
+<body>
+<form method="post">
+    <p>
+        <label>UID</label>
+        <input name="urid" type="text" value="newbie"/>
+    </p>
+    <p>
+        <label>UPW</label>
+        <input name="password" type="text" value="newbie"/>
+    </p>
+    <p>
+        <label>UNAME</label>
+        <input name="username" type="text" value="hongkd"/>
+    </p>
+    <p>
+        <input checked name="roleList[0].roleName" type="checkbox" value="BASIC">BASIC
+        <input checked name="roleList[1].roleName" type="checkbox" value="MANAGER">MANAGER
+        <input checked name="roleList[2].roleName" type="checkbox" value="ADMIN">ADMIN
+    </p>
+    <input th:name="${_csrf.parameterName}" th:value="${_csrf.token}" type="hidden"/>
+    <button class="btn" type="submit">JOIN</button>
+</form>
+</body>
+</html>
