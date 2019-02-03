@@ -18,8 +18,8 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.data.domain.Page;
 
 /*
-* org.thymeleaf.exceptions.TemplateInputException: Error resolving template [boards/list], template might not exist or might not be accessible by any of the configured Template Resolvers
-* 
+* org.thymeleaf.exceptions.TemplateInputException: Error resolving template [boards/list],
+* template might not exist or might not be accessible by any of the configured Template Resolvers
 * */
 
 @Controller
